@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Ennerdale Marketing</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="logo">
+        <i class="fa-solid fa-store"></i>
+      </div>
+
+      <h1>Ennerdale Marketing</h1>
+
+      <p>
+        Buy • Sell • Promote Your Products Easily
+      </p>
+
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main>
+
+    <!-- FORM -->
+    <section class="upload-card">
+
+      <div class="section-title">
+        <i class="fa-solid fa-cloud-arrow-up"></i>
+        <h2>Upload Product</h2>
+      </div>
+
+      <form id="productForm">
+
+        <div class="image-preview-area" id="imagePreviewArea">
+
+          <img
+            id="previewImage"
+            src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+            alt=""
+          >
+
+          <p>Tap to upload product image</p>
+
+        </div>
+
+        <input
+          type="file"
+          id="productImage"
+          accept="image/*"
+          hidden
+          required
+        >
+
+        <div class="input-box">
+          <i class="fa-solid fa-box"></i>
+
+          <input
+            type="text"
+            id="productName"
+            placeholder="Product Name"
+            required
+          >
+        </div>
+
+        <div class="double-input">
+
+          <div class="input-box">
+            <i class="fa-solid fa-tag"></i>
+
+            <input
+              type="text"
+              id="productPrice"
+              placeholder="Price"
+              required
+            >
+          </div>
+
+          <div class="input-box">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <input
+              type="text"
+              id="productLocation"
+              placeholder="Location"
+              required
+            >
+          </div>
+
+        </div>
+
+        <div class="input-box">
+          <i class="fa-solid fa-layer-group"></i>
+
+          <select id="productCategory" required>
+            <option value="">Select Category</option>
+            <option>Fashion</option>
+            <option>Electronics</option>
+            <option>Food</option>
+            <option>Furniture</option>
+            <option>Services</option>
+            <option>Cars</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <i class="fa-brands fa-whatsapp"></i>
+
+          <input
+            type="text"
+            id="productWhatsapp"
+            placeholder="WhatsApp Number"
+            required
+          >
+        </div>
+
+        <div class="textarea-box">
+
+          <textarea
+            id="productDescription"
+            rows="4"
+            placeholder="Write a product description..."
+            required
+          ></textarea>
+
+        </div>
+
+        <button type="submit" class="submit-btn">
+
+          <i class="fa-solid fa-paper-plane"></i>
+          Upload Product
+
+        </button>
+
+      </form>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section">
+
+      <div class="section-title">
+        <i class="fa-solid fa-fire"></i>
+        <h2>Latest Products</h2>
+      </div>
+
+      <div class="products-container" id="productsContainer">
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
